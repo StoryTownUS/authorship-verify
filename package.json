@@ -1,0 +1,17 @@
+{
+  "name": "storytown-authorship-verify",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "github:StoryTownUS/authorship-verify",
+  "description": "Open checker for Story Town proof-of-authorship records (format authorship/v1). Runs on your computer; needs nothing from Story Town.",
+  "type": "module",
+  "bin": { "storytown-verify": "tools/authorship-verify/cli.ts" },
+  "scripts": { "check": "node tools/authorship-verify/cli.ts" },
+  "engines": { "node": ">=23.6" },
+  "dependencies": {
+    "@noble/curves": "2.4.0",
+    "@noble/hashes": "2.4.0",
+    "canonicalize": "5.1.0",
+    "jszip": "3.10.1"
+  }
+}
